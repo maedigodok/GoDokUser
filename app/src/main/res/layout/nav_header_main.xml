@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:background="@android:color/transparent">
+
+    <!--
+    <ImageView
+        android:id="@+id/img_header_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/header"
+        android:layout_alignParentEnd="true" />
+    -->
+    <!--
+    <RelativeLayout
+        android:id="@+id/lbg_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="#60000000"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="testSubtitle"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="29dp" />
+
+    </RelativeLayout>
+    -->
+
+    <RelativeLayout
+        android:id="@+id/lyt_header"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/default_blue"
+        android:layout_alignParentTop="true">
+
+    <com.maedi.user.godok.v1.view.CircleBorderImageView
+        android:id="@+id/photo_profile"
+        android:layout_width="@dimen/profile_width"
+        android:layout_height="@dimen/profile_height"
+        android:src="@drawable/logo_godok"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp" />
+
+    <ImageView
+        android:id="@+id/gender_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/plus_white"
+        android:layout_alignTop="@+id/photo_profile"
+        android:layout_toRightOf="@+id/photo_profile"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Title"
+        android:layout_alignTop="@+id/gender_symbol"
+        android:layout_toRightOf="@+id/gender_symbol"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtitle"
+        android:textSize="13dp"
+        android:layout_alignStart="@+id/title"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="0dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lyt_content1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:layout_below="@id/lyt_header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_fragment"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/ic_poin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="poin"
+                android:src="@drawable/ic_poin"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/txt_content1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="150 Points"
+                android:textColor="@color/default_blue"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/ic_poin"
+                android:layout_alignBottom="@+id/ic_poin"
+                android:textSize="18dp"
+                android:textStyle="normal"/>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/default_blue" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

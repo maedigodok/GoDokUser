@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_background"
+    tools:context=".SplashActivity" >
+
+    <RelativeLayout
+		android:id="@+id/fullscreen_content" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backround_page_1">
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:contentDescription="logo"
+			android:src="@drawable/logo_godok"
+			android:layout_centerVertical="true"
+			android:layout_centerHorizontal="true" />
+
+		<!--
+		<VideoView
+			android:id="@+id/splash"
+			android:layout_width="match_parent"
+			android:layout_height="fill_parent"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentBottom="true"
+			android:scaleType="centerCrop"
+			android:fitsSystemWindows="true"
+			android:visibility="visible"/>
+
+		-->
+	    	
+    </RelativeLayout>
+
+</FrameLayout>

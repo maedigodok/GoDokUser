@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backround_page_1">
+
+    <include
+        android:id="@+id/header_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header_fragment"/>
+
+    <RelativeLayout
+        android:id="@+id/lyt_photoprofile"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/header_fragment"
+        android:layout_marginTop="5dp"
+        android:background="@color/default_blue">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lyt_photouser"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@drawable/circular_border_layout"
+        android:layout_marginTop="20dp"
+        android:layout_alignTop="@+id/lyt_photoprofile"
+        android:layout_centerHorizontal="true">
+
+        <com.maedi.user.godok.v1.view.CircleBorderImageView
+            android:id="@+id/photo_profile"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:contentDescription="myphoto"
+            android:src="@drawable/iko_cantik1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:id="@+id/lyt_photobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circular_standart_layout"
+            android:layout_alignBottom="@+id/photo_profile"
+            android:layout_alignEnd="@+id/photo_profile"
+            android:layout_marginEnd="1dp">
+
+            <ImageView
+                android:id="@+id/put_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="putphoto"
+                android:src="@drawable/ic_camera"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/field_item_profile"
+        android:layout_below="@+id/lyt_photouser"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"/>
+
+    <!--
+    <ListView
+        android:id="@+id/listmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:layout_below="@+id/lyt_photouser"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:descendantFocusability="afterDescendants"/>
+     -->
+
+</RelativeLayout>

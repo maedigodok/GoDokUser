@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+ 		android:layout_width="match_parent"
+ 		android:layout_height="match_parent"
+ 		android:background="@color/white">
+ 		
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+
+		<RelativeLayout
+			android:id="@+id/lyt_top"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp">
+
+			<View
+				android:id="@+id/separator"
+				android:layout_width="match_parent"
+				android:layout_height="3dp"
+				android:background="@color/default_blue"
+				android:layout_below="@+id/topicon">
+			</View>
+
+			<TextView
+				android:id="@+id/toptitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="30dp"
+				android:textColor="@color/default_blue"
+				android:text="Go Dok"
+				android:gravity="center_vertical"
+				android:textStyle="normal"
+				android:layout_centerVertical="true"
+				android:layout_toEndOf="@+id/topicon"
+				android:layout_marginStart="30dp" />
+
+			<ImageView
+				android:id="@+id/topicon"
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:contentDescription="logo_body"
+				android:src="@drawable/logo_godok"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentStart="true"
+				android:layout_marginStart="24dp" />
+
+		</RelativeLayout>
+
+	    <ImageView
+	        android:id="@+id/about_logo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:contentDescription="logo_body"
+	        android:src="@drawable/logo_godok"
+	        android:layout_marginTop="20dp"
+	        android:layout_centerHorizontal="true"
+			android:layout_below="@+id/lyt_top"/>
+	    
+	     <TextView
+	        android:id="@+id/about_version" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="14dp"
+			android:textSize="20dp"
+			android:textStyle="normal"
+			android:textColor="@color/default_blue"
+			android:layout_below="@id/about_logo"
+			 android:text="aboutVersion"/>
+	
+	     <TextView
+	        android:id="@+id/about_copyright" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="8dp"
+			android:textSize="14dp"
+			android:textColor="@color/default_blue"
+			android:layout_below="@id/about_version"
+			 android:text="aboutCopyright"/>
+	     
+	     <TextView
+	        android:id="@+id/about_link_1" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="18dp"
+			android:textSize="@dimen/about_link_text_size"
+			android:autoLink="web"
+			android:layout_below="@id/about_copyright"
+			 android:textColor="@color/default_blue"
+			 android:text="aboutLink"/>
+	     
+		<TextView
+	        android:id="@+id/about_link_2"
+	        android:visibility="invisible" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="14dp"
+			android:textSize="@dimen/about_link_text_size"
+			android:autoLink="web"
+			android:layout_below="@id/about_link_1"
+			android:textColor="@color/default_blue"
+			android:text="aboutLink2"/>
+
+	</RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:orientation="vertical"
+    android:paddingRight="10dp"
+    android:paddingLeft="0dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/item_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lyt_bg_text"
+            android:layout_marginLeft="4dp"
+            android:text="Jolinda Johary"
+            android:textColor="@color/default_blue"
+            android:textSize="14dp"
+            android:textStyle="normal" />
+
+        <RelativeLayout
+            android:id="@+id/lyt_bg_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_toLeftOf="@+id/item_image1"
+            android:layout_below="@+id/item_text1"
+            android:background="@drawable/bg_chat_self">
+
+            <TextView
+                android:id="@+id/item_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:text="test_texttest"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+        <com.maedi.user.godok.v1.view.CircleImageView
+            android:id="@+id/item_image1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="putphoto"
+            android:src="@drawable/iko_cantik1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_alignTop="@+id/lyt_bg_text"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/item_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lyt_bg_text"
+            android:layout_marginLeft="4dp"
+            android:text="12:12 AM"
+            android:textColor="@color/default_blue"
+            android:textSize="14dp"
+            android:textStyle="normal"
+            android:layout_below="@+id/lyt_bg_text"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

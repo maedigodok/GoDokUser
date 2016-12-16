@@ -1,0 +1,88 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <RelativeLayout
+            android:id="@+id/lyt_mainleft"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/item_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textSize="18dp"
+                android:text="Dijawab oleh dr. JolindaDijawab oleh dr. Jolinda"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/default_blue"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/item_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textSize="14dp"
+                android:text="x November 2016"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/default_blue"
+                android:layout_below="@+id/item_text1"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/calendar_blue"
+                android:drawablePadding="5dp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lyt_mainright"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 Poin"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:background="@drawable/custom_button_default_green"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:textAllCaps="false"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/default_blue"
+        android:layout_below="@+id/mainlayout"
+        android:layout_marginTop="20dp">
+    </View>
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_home_1">
+
+    <include
+        android:id="@+id/header_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header_fragment"/>
+
+    <RelativeLayout
+        android:id="@+id/lyt_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_fragment"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Poin yang Anda miliki"
+            android:textColor="@color/default_blue"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/ic_poin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:contentDescription="poin"
+            android:src="@drawable/ic_poin"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/title"
+            android:layout_alignStart="@+id/title"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="150 Points"
+            android:textColor="@color/default_blue"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/ic_poin"
+            android:layout_alignBottom="@+id/ic_poin"
+            android:textSize="20dp"
+            android:textStyle="normal"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lyt_top"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent">
+
+        <com.astuetz.PagerSlidingTabStrip
+            android:id="@+id/slide_indicator"
+            app:pstsShouldExpand="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            app:pstsDividerColor="@color/white"
+            app:pstsIndicatorColor="@color/default_green"
+            app:pstsIndicatorHeight="4dp"
+            app:pstsTabPaddingLeftRight="8dp"
+            app:pstsTextAllCaps="false"
+            android:background="@color/blue_dsg"
+            android:layout_below="@+id/divider"/>
+
+        <RelativeLayout
+            android:id="@+id/slide_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/slide_indicator"
+            android:background="@android:color/transparent" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/slide_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--
+    <ListView
+        android:id="@+id/listmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:layout_below="@+id/lyt_photouser"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:descendantFocusability="afterDescendants"/>
+     -->
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_mdi_home"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_mdi_profile"
+            android:title="@string/nav_profile"/>
+        <item
+            android:id="@+id/nav_myquestion"
+            android:icon="@drawable/ic_mdi_myquestion"
+            android:title="@string/nav_myquestion" />
+        <item
+            android:id="@+id/nav_favorite"
+            android:icon="@drawable/ic_mdi_favorite"
+            android:title="@string/nav_favorite" />
+        <!--
+        <item
+            android:id="@+id/nav_poin"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/nav_poin" />
+        <item
+            android:id="@+id/nav_infohealth"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/nav_info_health" />
+         -->
+        <item
+            android:id="@+id/nav_article"
+            android:icon="@drawable/ic_mdi_article"
+            android:title="@string/nav_article" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_nav_mdi_share"
+            android:title="@string/nav_share" />
+        <!--
+        <item
+            android:id="@+id/nav_more"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/nav_more" />
+            -->
+
+    </group>
+
+    <item
+        android:id="@+id/nav_submenu"
+        android:title="Lainnya"
+        app:showAsAction="never">
+        <menu>
+            <!--<item
+                android:id="@+id/nav_info"
+                android:title="@string/nav_info" />-->
+            <item
+                android:id="@+id/notification"
+                android:title="@string/nav_notification"
+                app:actionLayout="@layout/menu_item_setting_notify"/>
+            <item
+                android:id="@+id/comment"
+                android:title="@string/nav_comment" />
+            <item
+                android:id="@+id/aboutus"
+                android:title="@string/nav_aboutus" />
+            <item
+                android:id="@+id/version"
+                android:title="@string/nav_version" />
+        </menu>
+    </item>
+
+    <!--
+    <group android:checkableBehavior="single">
+        <item
+            android:title=""
+            app:showAsAction="never">
+            <menu>
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/ic_home_black_24dp"
+                    android:title="@string/nav_home"
+                    app:showAsAction="never"/>
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/ic_photo_library_black_24dp"
+                    android:title="@string/nav_profile"
+                    app:showAsAction="never"/>
+                <item
+                    android:id="@+id/nav_myquestion"
+                    android:icon="@drawable/ic_local_movies_black_24dp"
+                    android:title="@string/nav_myquestion"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/nav_favorite"
+                    android:icon="@drawable/ic_notifications_black_24dp"
+                    android:title="@string/nav_favorite"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/nav_poin"
+                    android:icon="@drawable/ic_settings_black_24dp"
+                    android:title="@string/nav_poin"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/nav_infohealth"
+                    android:title="@string/nav_info_health"
+                    android:icon="@drawable/ic_settings_black_24dp"/>
+            </menu>
+        </item>
+    </group>
+    -->
+    <!--
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_share"
+            android:title="@string/nav_share" />
+        <item
+            android:id="@+id/nav_more"
+            android:title="@string/nav_more" />
+    </group>
+    -->
+    <!--
+    <item
+        android:id="@+id/nav_share"
+        android:title="@string/nav_share"/>
+    <item
+        android:id="@+id/nav_more"
+        android:title="@string/nav_more" />
+        -->
+
+</menu>

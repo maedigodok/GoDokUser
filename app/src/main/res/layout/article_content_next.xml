@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/lyt_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_blue"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/item_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textSize="22dp"
+            android:text="Sumber"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="14dp"
+        android:text="Dikutip pada 30 Oktober 2016"
+        android:textColor="@color/news_leftmenu_text4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/lyt_1" />
+
+    <TextView
+        android:id="@+id/item_text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="22dp"
+        android:text="http://article/snap/go/gogle/about/healty"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/item_text5" />
+
+    <TextView
+        android:id="@+id/item_text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="22dp"
+        android:text="http://article/snap/go/gogle/about/healty"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/item_text6" />
+
+    <RelativeLayout
+        android:id="@+id/lyt_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/item_text7"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/item_image_1a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:fitsSystemWindows="true"
+            android:src="@drawable/ic_favarite_article"/>
+
+        <ImageView
+            android:id="@+id/item_image_2a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/item_image_1a"
+            android:layout_marginLeft="20dp"
+            android:scaleType="centerCrop"
+            android:fitsSystemWindows="true"
+            android:src="@drawable/ic_share_facebook"/>
+
+        <ImageView
+            android:id="@+id/item_image_3a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/item_image_2a"
+            android:layout_marginLeft="20dp"
+            android:scaleType="centerCrop"
+            android:fitsSystemWindows="true"
+            android:src="@drawable/ic_share_twitter"/>
+
+        <ImageView
+            android:id="@+id/item_image_4a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/item_image_3a"
+            android:layout_marginLeft="20dp"
+            android:scaleType="centerCrop"
+            android:fitsSystemWindows="true"
+            android:src="@drawable/ic_share_instagram"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lyt_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_blue"
+        android:layout_below="@+id/lyt_2"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/item_text8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:text="Tulis Komentar"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_text9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lyt_3"
+        android:layout_marginTop="20dp"
+        android:textSize="14dp"
+        android:text="2016@ Go Dok"
+        android:textColor="@color/news_leftmenu_text4"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,325 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp">
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:singleLine="true"
+        android:text="TITLE1"
+        android:textColor="@color/default_blue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edtext1"
+        android:hint="EDIT TEXT1"
+        android:textColorHint="@color/default_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title1"
+        android:gravity="left"
+        android:textColor="@color/default_blue"
+        android:textSize="22dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:paddingBottom="6dp"
+        android:inputType="text"
+        android:background="@drawable/custom_edittext_blue"/>
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:singleLine="true"
+        android:text="TITLE2"
+        android:textColor="@color/default_blue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edtext1"/>
+
+    <EditText
+        android:id="@+id/edtext2"
+        android:hint="EDIT TEXT2"
+        android:textColorHint="@color/default_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title2"
+        android:gravity="left"
+        android:textColor="@color/default_blue"
+        android:textSize="22dp"
+        android:inputType="date"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:paddingBottom="6dp"
+        android:background="@drawable/custom_edittext_blue"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <ImageButton
+        android:id="@+id/date_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:layout_below="@id/title2"
+        android:layout_toLeftOf="@+id/edtext2"
+        android:src="@drawable/arrow_down_blue"
+        android:background="@android:color/transparent"
+        android:contentDescription="date_picker">
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:singleLine="true"
+        android:text="TITLE3"
+        android:textColor="@color/default_blue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edtext2"/>
+
+    <Spinner
+        android:id="@+id/spin_gender"
+        style="@style/spinner_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Laki Laki"
+        android:padding="4dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/title3"
+        android:textColor="@color/default_blue"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/title4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:singleLine="true"
+        android:text="TITLE4"
+        android:textColor="@color/default_blue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/spin_gender"/>
+
+    <EditText
+        android:id="@+id/edtext4"
+        android:hint="EDIT TEXT4"
+        android:textColorHint="@color/default_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title4"
+        android:gravity="left"
+        android:textColor="@color/default_blue"
+        android:textSize="22dp"
+        android:inputType="text"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:paddingBottom="6dp"
+        android:background="@drawable/custom_edittext_blue"/>
+
+    <TextView
+        android:id="@+id/title5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:singleLine="true"
+        android:text="TITLE5"
+        android:textColor="@color/default_blue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edtext4"/>
+
+    <EditText
+        android:id="@+id/edtext5"
+        android:hint="EDIT TEXT5"
+        android:textColorHint="@color/default_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title5"
+        android:gravity="left"
+        android:textColor="@color/default_blue"
+        android:textSize="22dp"
+        android:inputType="text"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:paddingBottom="6dp"
+        android:background="@drawable/custom_edittext_blue"/>
+
+
+    <TextView
+        android:id="@+id/title6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:singleLine="true"
+        android:text="TITLE6"
+        android:textColor="@color/default_blue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edtext5"/>
+
+    <EditText
+        android:id="@+id/edtext6"
+        android:hint="EDIT TEXT6"
+        android:textColorHint="@color/default_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title6"
+        android:gravity="left"
+        android:textColor="@color/default_blue"
+        android:textSize="22dp"
+        android:inputType="text"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:paddingBottom="6dp"
+        android:background="@drawable/custom_edittext_blue"/>
+
+    <TextView
+        android:id="@+id/title7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:singleLine="true"
+        android:text="TITLE7"
+        android:textColor="@color/default_blue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edtext6"/>
+
+    <EditText
+        android:id="@+id/edtext7"
+        android:hint="EDIT TEXT7"
+        android:textColorHint="@color/default_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title7"
+        android:gravity="left"
+        android:textColor="@color/default_blue"
+        android:textSize="22dp"
+        android:inputType="text"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:paddingBottom="6dp"
+        android:background="@drawable/custom_edittext_blue"/>
+
+    <TextView
+        android:id="@+id/title8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:singleLine="true"
+        android:text="TITLE8"
+        android:textColor="@color/default_blue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edtext7"/>
+
+    <EditText
+        android:id="@+id/edtext8"
+        android:hint="EDIT TEXT8"
+        android:textColorHint="@color/default_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title8"
+        android:gravity="left"
+        android:textColor="@color/default_blue"
+        android:textSize="22dp"
+        android:inputType="text"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:paddingBottom="6dp"
+        android:background="@drawable/custom_edittext_blue"/>
+
+    <TextView
+        android:id="@+id/title9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:singleLine="true"
+        android:text="TITLE9"
+        android:textColor="@color/default_blue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edtext8"/>
+
+    <EditText
+        android:id="@+id/edtext9"
+        android:hint="EDIT TEXT9"
+        android:textColorHint="@color/default_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title9"
+        android:gravity="left"
+        android:textColor="@color/default_blue"
+        android:textSize="22dp"
+        android:inputType="textPassword"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:paddingBottom="6dp"
+        android:background="@drawable/custom_edittext_blue"/>
+
+    <Button
+        android:id="@+id/item_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@drawable/custom_button"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp"
+        android:text="Perbaharui"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/edtext9"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:visibility="visible"
+        android:layout_alignEnd="@+id/edtext9" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

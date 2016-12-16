@@ -1,0 +1,265 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_register"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    android:fillViewport="true">
+
+    <!--
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="logo"
+        android:src="@drawable/logo_godok"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+    -->
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical">-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="0dp"
+            android:paddingBottom="0dp">
+
+        <RelativeLayout
+            android:id="@+id/layout_creg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="290dp">
+
+            <!--
+            <EditText
+                android:id="@+id/reg_phone"
+                android:hint="Nomor Ponsel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="20dp"
+                android:inputType="number"
+                android:layout_marginBottom="75dp"
+                android:background="@drawable/custom_edittext_2"
+                android:textCursorDrawable="@drawable/custom_cursor_color"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/userpass"
+                android:layout_alignBottom="@+id/registeruser">
+
+            </EditText>
+            -->
+
+            <EditText
+                android:id="@+id/username"
+                android:hint="Nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="left"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:background="@drawable/custom_edittext_2"
+                android:textSize="20dp"
+                android:inputType="text"
+                android:drawableLeft="@drawable/username"
+                android:drawablePadding="10dp"
+                android:textCursorDrawable="@drawable/custom_cursor_color" />
+
+            <EditText
+                android:id="@+id/useremail"
+                android:hint="Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:gravity="left"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:background="@drawable/custom_edittext_2"
+                android:textSize="20dp"
+                android:inputType="text"
+                android:layout_below="@+id/username"
+                android:drawableLeft="@drawable/useremail"
+                android:drawablePadding="10dp"
+                android:textCursorDrawable="@drawable/custom_cursor_color" />
+
+            <EditText
+                android:id="@+id/katasandi"
+                android:hint="Kata Sandi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:gravity="left"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:background="@drawable/custom_edittext_2"
+                android:textSize="20dp"
+                android:inputType="text"
+                android:layout_below="@+id/useremail"
+                android:drawableLeft="@drawable/userpass"
+                android:drawablePadding="10dp"
+                android:textCursorDrawable="@drawable/custom_cursor_color" />
+
+            <Button
+                android:id="@+id/registeruser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Daftar"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/katasandi"
+                android:background="@drawable/custom_button_2"
+                android:textColor="#4394D0"
+                android:layout_centerHorizontal="true"
+                android:textAllCaps="false"/>
+
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+    <!--</ScrollView>-->
+
+</ScrollView>
+
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround_page_1" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:background="#4394D0">
+
+        <EditText
+            android:id="@+id/username"
+            android:hint="Nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:background="@drawable/custom_edittext_2"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:layout_above="@+id/useremail"
+            android:layout_marginBottom="15dp"
+            android:drawableLeft="@drawable/username"
+            android:drawablePadding="10dp"
+            android:textCursorDrawable="@drawable/custom_cursor_color">
+        </EditText>
+
+        <EditText
+            android:id="@+id/useremail"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="left"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:background="@drawable/custom_edittext_2"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:layout_above="@+id/katasandi"
+            android:layout_marginBottom="15dp"
+            android:drawableLeft="@drawable/useremail"
+            android:drawablePadding="10dp"
+            android:textCursorDrawable="@drawable/custom_cursor_color">
+        </EditText>
+
+        <EditText
+            android:id="@+id/katasandi"
+            android:hint="Kata Sandi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="left"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:background="@drawable/custom_edittext_2"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:layout_above="@+id/reg_phone"
+            android:layout_marginBottom="15dp"
+            android:drawableLeft="@drawable/userpass"
+            android:drawablePadding="10dp"
+            android:textCursorDrawable="@drawable/custom_cursor_color">
+        </EditText>
+
+        <EditText
+            android:id="@+id/reg_phone"
+            android:hint="Nomor Ponsel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20dp"
+            android:inputType="number"
+            android:layout_marginBottom="36dp"
+            android:layout_above="@+id/registeruser"
+            android:background="@drawable/custom_edittext_2"
+            android:textCursorDrawable="@drawable/custom_cursor_color"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/userpass">
+        </EditText>
+
+        <Button
+            android:id="@+id/registeruser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="DAFTAR"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="46dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom_button_2"
+            android:textColor="#4394D0">
+        </Button>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="logo"
+        android:src="@drawable/logo_godok"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+
+
+</RelativeLayout>
+-->

@@ -1,0 +1,396 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backround_page_1">
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_layout_write_status"
+        android:paddingTop="0dp"
+        android:paddingBottom="5dp">
+
+        <RelativeLayout
+            android:id="@+id/ly_edit_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+        <EditText
+            android:id="@+id/edit_status"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="left"
+            android:textCursorDrawable="@null"
+            android:cursorVisible="true"
+            android:hint="What's your new achievement?"
+            android:singleLine="false"
+            android:maxLines="4"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text=""
+            android:background="@color/transparent" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/separator_writeStatus"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/ly_edit_status"
+            android:layout_alignLeft="@+id/ly_edit_status"
+            android:layout_alignRight="@+id/ly_edit_status"
+            android:background="#407C868E" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/separator_writeStatus"
+            android:layout_alignLeft="@+id/ly_edit_status"
+            android:layout_alignRight="@+id/ly_edit_status">
+
+            <RelativeLayout
+                android:id="@+id/lyIcWriteStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/lyIcWriteCamera"
+                android:layout_marginRight="20dp">
+
+                <ImageView
+                    android:id="@+id/ic_write_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="write_status"
+                    android:src="@drawable/ic_write_status" />
+
+                <TextView
+                    android:id="@+id/txtStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ic_write_status"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center"
+                    android:singleLine="true"
+                    android:text="WRITE"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lyIcWriteCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp">
+
+                <ImageView
+                    android:id="@+id/ic_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="-2dp"
+                    android:contentDescription="camera"
+                    android:src="@drawable/ic_camera" />
+
+                <TextView
+                    android:id="@+id/txtCamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ic_camera"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center"
+                    android:singleLine="true"
+                    android:text="ADD PHOTO" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    -->
+    <!--
+    <ListView
+        android:id="@+id/listmenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:divider="@color/news_shadow_bg"
+        android:cacheColorHint="@android:color/transparent"
+        android:dividerHeight="1dp"
+        android:layout_below="@+id/main_layout"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    -->
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/default_green" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/divider"
+        android:scrollbars="none"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ly_slide_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/white">
+
+                <com.maedi.user.godok.v1.viewpagerindicator.imbryk.LoopViewPager
+                    android:id="@+id/slide_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_weight="1" />
+
+                <com.maedi.user.godok.v1.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/slide_indicator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/slide_pager"
+                    android:layout_marginTop="-20dp"/>
+
+            </LinearLayout>
+
+    <!--
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:divider="@color/news_shadow_bg"
+        android:cacheColorHint="@android:color/transparent"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+    -->
+            <!--
+            <RelativeLayout
+                android:id="@+id/lyt_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/ly_slide_product"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/default_blue"
+                    android:text="Selamat Pagi, Malika"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+            -->
+            <LinearLayout
+                android:id="@+id/lyt_button1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:layout_below="@+id/ly_slide_product">
+
+                <ImageView
+                    android:id="@+id/askto_doctor"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:scaleType="fitEnd"
+                    android:fitsSystemWindows="true"
+                    android:src="@drawable/askdoctor"/>
+
+                <ImageView
+                    android:id="@+id/search_doctor"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:scaleType="fitStart"
+                    android:fitsSystemWindows="true"
+                    android:src="@drawable/finddoctor"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt_button2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:layout_below="@+id/lyt_button1">
+
+                <ImageView
+                    android:id="@+id/article_video"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/articlevideo"
+                    android:scaleType="fitEnd"
+                    android:fitsSystemWindows="true"/>
+
+                <ImageView
+                    android:id="@+id/event"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/event"
+                    android:scaleType="fitStart"
+                    android:fitsSystemWindows="true"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/lyt_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/lyt_button2"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="25dp">
+
+                <RelativeLayout
+                    android:id="@+id/lyt_newsupdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp">
+
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="@color/blue_dsg"
+                        android:text="Berita Terbaru"
+                        android:layout_alignParentStart="true"/>
+
+                    <ImageView
+                        android:id="@+id/scroll_bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/scroll_bottom"
+                        android:layout_alignTop="@+id/txt2"
+                        android:layout_toRightOf="@+id/txt2"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="6dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lyt_headline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/default_green"
+                    android:layout_below="@+id/lyt_newsupdate"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/txt_headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="@color/white"
+                        android:text="Headline here"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="25dp"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/txt_subheadline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/white"
+                        android:text="Insert subheadline here"
+                        android:layout_below="@+id/txt_headline"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginStart="10dp"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/txt_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="@color/white"
+                        android:text="23 November 2016"
+                        android:layout_below="@+id/txt_subheadline"
+                        android:drawableLeft="@drawable/date"
+                        android:drawablePadding="6dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="@color/white"
+                        android:text="30 menit lalu"
+                        android:layout_below="@+id/txt_subheadline"
+                        android:layout_toRightOf="@+id/txt_date"
+                        android:layout_marginLeft="50dp"
+                        android:drawableLeft="@drawable/time"
+                        android:drawablePadding="6dp"
+                        android:layout_marginTop="20dp"
+                        android:textAlignment="textStart" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

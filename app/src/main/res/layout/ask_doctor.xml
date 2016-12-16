@@ -1,0 +1,136 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent" >
+
+        <TextView
+            android:id="@+id/title_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="@dimen/news_profilename_marginright"
+            android:text="Deskripsi:"
+            android:textColor="@color/news_text"
+            android:textSize="@dimen/news_profilename_text"
+            android:ellipsize="end"
+            style="@style/listItemTabNewsTextProfileName" />
+
+        <EditText
+            android:id="@+id/desc"
+            android:hint="Deskripsi penyakit\n(Keterangan dan waktu)"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="left"
+            android:textColor="#90000000"
+            android:textSize="18dp"
+            android:inputType="textMultiLine"
+            android:background="@drawable/custom_edittext_standart"
+            android:padding="4dp"
+            android:layout_below="@+id/title_desc"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:maxLines="4">
+        </EditText>
+
+        <TextView
+            android:id="@+id/title_uploadphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/news_profilename_marginright"
+            android:text="Upload foto atau laporan:"
+            android:layout_below="@+id/desc"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/news_text"
+            android:textSize="@dimen/news_profilename_text"
+            style="@style/listItemTabNewsTextProfileName" />
+
+        <Button
+            android:id="@+id/upload_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="#80000000"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="Upload"
+            android:layout_below="@+id/title_uploadphoto"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/age"
+            android:hint="Umur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="left"
+            android:textColor="#90000000"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:background="@drawable/custom_edittext_standart"
+            android:padding="4dp"
+            android:layout_below="@+id/upload_photo"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+        </EditText>
+
+        <Spinner
+            android:id="@+id/spin_gender"
+            style="@style/spinner_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Laki Laki"
+            android:padding="4dp"
+            android:layout_below="@+id/age"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentLeft="true"
+            android:background="@color/gray"
+            android:layout_below="@+id/spin_gender"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="#80000000"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="Kirim"
+            android:layout_below="@+id/separator"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

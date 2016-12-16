@@ -1,0 +1,234 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/header_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header_fragment"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_fragment"
+        android:scrollbars="none"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/lyt_maintop"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/default_green">
+
+                <ImageView
+                    android:id="@+id/item_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:fitsSystemWindows="true"
+                    android:src="@drawable/iko_cantik1"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/mainlayout_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_below="@+id/lyt_maintop"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/lyt_mainleft_a"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp">
+
+                    <TextView
+                        android:id="@+id/item_text1_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:textSize="11dp"
+                        android:text="Benjamin Combs / Unsplash"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textColor="@color/news_leftmenu_text4"
+                        android:layout_marginTop="8dp"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lyt_mainright_a"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="9dp">
+
+                    <TextView
+                        android:id="@+id/item_text2_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:textSize="11dp"
+                        android:text="1000 Pembaca"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textColor="@color/news_leftmenu_text4"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:drawableLeft="@drawable/ic_content_article"
+                        android:drawablePadding="5dp"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainlayout_a"
+                android:layout_gravity="left"
+                android:textSize="25dp"
+                android:text="Insert new titleInsert new titleInsert new title"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/item_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_title"
+                android:layout_gravity="left"
+                android:textSize="18dp"
+                android:text="Insert new subtitleInsert new subtitleInsert new subtitle"
+                android:textColor="@color/news_leftmenu_text4"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/mainlayout_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_below="@+id/item_subtitle"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/lyt_mainleft_b"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp">
+
+                    <TextView
+                        android:id="@+id/item_text1_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:textSize="11dp"
+                        android:text="x November 2016"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textColor="@color/news_leftmenu_text4"
+                        android:layout_marginTop="8dp"
+                        android:drawableLeft="@drawable/date_black"
+                        android:drawablePadding="5dp"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lyt_mainright_b"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="9dp">
+
+                    <TextView
+                        android:id="@+id/item_text2_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:textSize="11dp"
+                        android:text="Dipos 11 jam yang lalu"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textColor="@color/news_leftmenu_text4"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:drawableLeft="@drawable/time_black"
+                        android:drawablePadding="5dp"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textSize="18dp"
+                android:text="Insert new contentInsert new contentInsert new content"
+                android:textColor="@color/news_leftmenu_text4"
+                android:layout_below="@+id/mainlayout_b"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="30dp"/>
+
+            <include
+                android:id="@+id/next_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_text3"
+                android:layout_marginTop="30dp"
+                layout="@layout/article_content_next"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/item_image_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:scaleType="centerCrop"
+        android:fitsSystemWindows="true"
+        android:src="@drawable/ic_mdi_share"/>
+
+</RelativeLayout>

@@ -1,0 +1,272 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+	<!--
+	<RelativeLayout
+		android:id="@+id/top_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/border_layout_write_status"
+		android:paddingTop="0dp"
+		android:paddingBottom="5dp">
+
+		<RelativeLayout
+			android:id="@+id/ly_edit_status"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp">
+
+			<EditText
+				android:id="@+id/edit_status"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:paddingTop="10dp"
+				android:paddingBottom="10dp"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp"
+				android:gravity="left"
+				android:textCursorDrawable="@null"
+				android:cursorVisible="true"
+				android:hint="What's your new achievement?"
+				android:singleLine="false"
+				android:maxLines="4"
+				android:textSize="15sp"
+				android:textColor="#000000"
+				android:text=""
+				android:background="@android:color/transparent" />
+
+		</RelativeLayout>
+
+		<View
+			android:id="@+id/separator_writeStatus"
+			android:layout_width="match_parent"
+			android:layout_height="0.5dp"
+			android:layout_marginTop="1dp"
+			android:layout_below="@+id/ly_edit_status"
+			android:layout_alignLeft="@+id/ly_edit_status"
+			android:layout_alignRight="@+id/ly_edit_status"
+			android:background="#407C868E" />
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:layout_below="@+id/separator_writeStatus"
+			android:layout_alignLeft="@+id/ly_edit_status"
+			android:layout_alignRight="@+id/ly_edit_status">
+
+			<RelativeLayout
+				android:id="@+id/lyIcWriteStatus"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@+id/lyIcWriteCamera"
+				android:layout_marginRight="20dp">
+
+				<ImageView
+					android:id="@+id/ic_write_status"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="5dp"
+					android:contentDescription="write_status"
+					android:src="@drawable/ic_write_status" />
+
+				<TextView
+					android:id="@+id/txtStatus"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_toRightOf="@+id/ic_write_status"
+					android:layout_marginTop="2dp"
+					android:layout_gravity="center"
+					android:singleLine="true"
+					android:text="WRITE"/>
+
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/lyIcWriteCamera"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="20dp">
+
+				<ImageView
+					android:id="@+id/ic_camera"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="5dp"
+					android:layout_marginTop="-2dp"
+					android:contentDescription="camera"
+					android:src="@drawable/ic_camera" />
+
+				<TextView
+					android:id="@+id/txtCamera"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_toRightOf="@+id/ic_camera"
+					android:layout_marginTop="2dp"
+					android:layout_gravity="center"
+					android:singleLine="true"
+					android:text="ADD PHOTO" />
+
+			</RelativeLayout>
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+    -->
+	<!--
+	<LinearLayout
+		android:id="@+id/ly_slide_product"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentTop="true"
+		android:gravity="center"
+		android:layout_marginTop="0dp"
+		android:background="@android:color/transparent">
+
+		<com.maedi.user.godok.v1.viewpagerindicator.imbryk.LoopViewPager
+			android:id="@+id/slide_pager"
+			android:layout_width="match_parent"
+			android:layout_height="150dp"
+			android:layout_weight="1" />
+
+		<ProgressBar
+			android:id="@+id/progressBar1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:visibility="gone"/>
+
+		<com.maedi.user.godok.v1.viewpagerindicator.CirclePageIndicator
+			android:id="@+id/slide_indicator"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="0dp"
+			android:paddingBottom="0dp"
+			android:layout_below="@+id/slide_pager"
+			android:layout_marginTop="-20dp"/>
+
+	</LinearLayout>
+	-->
+    <RelativeLayout 
+        android:id="@+id/main_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+		android:layout_marginTop="2dp"
+	    android:background="@android:color/transparent" >
+    
+    <RelativeLayout 
+        android:id="@+id/parent_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+		android:background="@color/white"
+	    android:paddingBottom="@dimen/news_parentlayout_paddingbottom" >
+    
+	    <com.maedi.user.godok.v1.view.RoundRectangleImageView
+	        android:id="@+id/listmenuitemicon"
+	        android:contentDescription="Image"
+	        android:layout_width="@dimen/header_main_profile_image_width"
+	        android:layout_height="@dimen/header_main_profile_image_height"
+	        android:layout_alignParentLeft="true"        
+	        android:adjustViewBounds="true"
+	        android:scaleType="centerCrop"
+	        android:layout_marginTop="@dimen/news_ic_profile_margintop"
+	        android:layout_marginBottom="@dimen/news_ic_profile_marginbottom"
+	        android:layout_marginLeft="@dimen/news_ic_profile_marginleft"
+	        android:layout_marginRight="0dp"
+	        android:src="@drawable/logo_godok" />
+
+	    <TextView
+		    android:id="@+id/listmenuitemtext"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginRight="@dimen/news_profilename_marginright"
+		    android:text="Kartikowati"
+		    android:layout_alignTop="@+id/listmenuitemicon"
+		    android:layout_toRightOf="@id/listmenuitemicon"
+		    android:textColor="@color/news_text"
+		    android:textSize="@dimen/news_profilename_text"
+		    style="@style/listItemTabNewsTextProfileName" />
+	    
+	    <TextView
+		    android:id="@+id/listmenuitemtext2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/listmenuitemtext"
+		    android:layout_alignLeft="@+id/listmenuitemtext"
+		    android:singleLine="true"
+		    android:text="02:35"
+		    android:textColor="@color/news_hours"
+		    android:textSize="@dimen/news_hours_text" />
+	    
+	    <View
+	        android:id="@+id/separator_listmenuitemtext2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/listmenuitemtext2"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="2dp"
+            android:layout_alignLeft="@+id/listmenuitemtext"
+            android:background="@color/chats_separator_listmenuitemtext" />
+	    
+	    <TextView
+		    android:id="@+id/listmenuitemtext3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/separator_listmenuitemtext2"
+		    android:layout_alignLeft="@+id/listmenuitemtext"
+		    android:layout_marginTop="@dimen/news_status_margintop"
+		    android:layout_marginRight="@dimen/news_status_marginright"
+		    android:maxLines="4"
+		    android:text="test text update"
+		    android:textColor="@color/news_text2"
+		    android:textSize="@dimen/news_status_text" />
+
+		<com.maedi.user.godok.v1.view.RoundRectangleImageView
+			android:id="@+id/listmenuitemicon5"
+			android:contentDescription="@string/status_image_news"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_below="@+id/listmenuitemtext3"
+			android:adjustViewBounds="true"
+			android:scaleType="centerCrop"
+			android:layout_marginTop="@dimen/news_statusimage_margintop"
+			android:layout_marginLeft="@dimen/news_statusimage_marginright"
+			android:layout_marginRight="@dimen/news_statusimage_marginright"
+			android:maxHeight="@dimen/news_statusimage_maxheight"
+			android:minHeight="@dimen/news_statusimage_minheight"
+			android:minWidth="@dimen/news_statusimage_minwidth"
+			android:src="@drawable/logo_godok" />
+    
+    </RelativeLayout>
+
+	<View
+			android:id="@+id/separator_newsComment"
+			android:layout_width="match_parent"
+			android:layout_height="0.5dp"
+			android:layout_marginTop="0.5dp"
+			android:layout_below="@+id/parent_layout"
+			android:background="#407C868E" />
+    
+    <include
+	        android:layout_width="match_parent"
+	        android:layout_height="36dp"
+	        android:layout_below="@+id/separator_newsComment"
+	        android:layout_marginLeft="2dp"
+    		android:layout_marginRight="2dp"
+		android:layout_alignParentLeft="true"
+	        layout="@layout/list_news_left_menu" />
+    
+    </RelativeLayout>
+
+</RelativeLayout>
